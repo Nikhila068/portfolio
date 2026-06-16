@@ -1,20 +1,26 @@
 function About() {
   return (
-    <section id="about" className="py-24 px-10 bg-slate-800">
-
-      <h2 className="text-4xl font-bold text-center text-cyan-400">
+    <section
+      id="about"
+      className="py-24 px-10 bg-slate-800"
+    >
+      <h2 className="text-5xl font-extrabold text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
         About Me
       </h2>
 
-      <p className="max-w-4xl mx-auto mt-10 text-lg text-gray-300 leading-9 text-center">
+      <div className="max-w-5xl mx-auto mt-12 bg-slate-900 p-10 rounded-3xl border border-slate-700 shadow-lg">
 
-        I am a passionate Full Stack Developer skilled in
-        MongoDB, Express.js, React.js, and Node.js.
+        <p className="text-lg text-gray-300 leading-9 text-center">
 
-        I love building modern responsive websites and
-        learning new technologies.
+          I am a passionate FULL Stack Developer and Computer Science student.
 
-      </p>
+          I specialize in building modern, scalable and responsive web applications using React.js, Node.js, Express.js and MongoDB.
+
+          I have developed projects like BookNest and continuously improve my development skills through internships, certifications and real-world projects.
+
+        </p>
+
+      </div>
 
     </section>
   )

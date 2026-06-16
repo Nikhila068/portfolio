@@ -7,11 +7,13 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #0f172a;
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1e293b
+  );
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes fadeIn {
@@ -28,4 +30,22 @@ body {
 
 .animate-fadeIn {
   animation: fadeIn 1.5s ease;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
 }

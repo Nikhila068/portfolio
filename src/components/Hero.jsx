@@ -5,37 +5,48 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-16 px-10 pt-28 bg-gradient-to-b from-slate-900 to-slate-800"
+      className="relative min-h-screen flex flex-col md:flex-row items-center justify-center gap-16 px-10 pt-28 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900"
     >
 
-      {/* Left */}
+      {/* Background Glow Effects */}
 
-      <div className="animate-fadeIn">
+      <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500 rounded-full blur-[150px] opacity-20"></div>
 
-        <h2 className="text-2xl text-cyan-400">
+      <div className="absolute bottom-10 right-20 w-72 h-72 bg-blue-500 rounded-full blur-[150px] opacity-20"></div>
+
+      {/* Left Side */}
+
+      <div className="z-10 animate-fadeIn">
+
+        <h2 className="text-2xl text-cyan-400 font-semibold">
           Hello, I'm
         </h2>
 
-        <h1 className="text-6xl font-bold mt-4">
+        <h1 className="text-5xl md:text-7xl font-extrabold mt-4 leading-tight">
 
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Nikhila
+          <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            Nikhila Krishna Sri Kodi
           </span>
 
         </h1>
 
         <h2 className="text-3xl mt-6 font-bold text-white">
-          FULL STACK DEVELOPER
+          Full Stack Developer
         </h2>
 
-        <p className="text-gray-300 mt-6 max-w-xl leading-8">
-          Passionate Full Stack Developer focused on building responsive,
-          modern and scalable web applications using MERN Stack.
+        <p className="text-gray-300 mt-6 max-w-xl leading-8 text-lg">
+
+          Passionate MERN Stack Developer focused on building
+          modern, responsive and scalable web applications.
+
+          Experienced in React.js, Node.js, Express.js
+          and MongoDB.
+
         </p>
 
         {/* Buttons */}
 
-        <div className="flex gap-6 mt-8">
+        <div className="flex flex-wrap gap-6 mt-8">
 
           <a
             href="#projects"
@@ -48,19 +59,20 @@ function Hero() {
             href="/resume.pdf"
             className="border border-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
           >
-            Resume
+            Download Resume
           </a>
 
         </div>
 
         {/* Social Icons */}
 
-        <div className="flex gap-6 mt-8 text-3xl">
+        <div className="flex gap-6 mt-8 text-4xl">
 
           <a
             href="https://github.com/Nikhila068"
             target="_blank"
-            className="hover:text-cyan-400 transition"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 hover:scale-110 transition duration-300"
           >
             <FaGithub />
           </a>
@@ -68,7 +80,8 @@ function Hero() {
           <a
             href="https://www.linkedin.com/in/nikhilakodi/"
             target="_blank"
-            className="hover:text-cyan-400 transition"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 hover:scale-110 transition duration-300"
           >
             <FaLinkedin />
           </a>
@@ -77,14 +90,14 @@ function Hero() {
 
       </div>
 
-      {/* Right */}
+      {/* Right Side */}
 
-      <div>
+      <div className="z-10">
 
         <img
           src={profile}
           alt="profile"
-          className="w-[350px] rounded-full border-4 border-cyan-400 shadow-[0_0_40px_#22d3ee]"
+          className="float w-[300px] md:w-[400px] rounded-full border-4 border-cyan-400 shadow-[0_0_60px_#22d3ee] hover:scale-105 transition duration-500"
         />
 
       </div>
