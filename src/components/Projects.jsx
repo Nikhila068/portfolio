@@ -64,13 +64,7 @@ function Projects() {
   >
     Live Demo
   </a>
-
-</div>
-
-
-
-
-            </div>
+</div>            </div>
 
           </div>
         ))}

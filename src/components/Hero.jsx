@@ -25,7 +25,7 @@ function Hero() {
         </h1>
 
         <h2 className="text-3xl mt-6 font-bold text-white">
-          MERN Stack Developer
+          FULL STACK DEVELOPER
         </h2>
 
         <p className="text-gray-300 mt-6 max-w-xl leading-8">
@@ -58,7 +58,7 @@ function Hero() {
         <div className="flex gap-6 mt-8 text-3xl">
 
           <a
-            href="https://github.com/"
+            href="https://github.com/Nikhila068"
             target="_blank"
             className="hover:text-cyan-400 transition"
           >
@@ -66,7 +66,7 @@ function Hero() {
           </a>
 
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/nikhilakodi/"
             target="_blank"
             className="hover:text-cyan-400 transition"
           >
